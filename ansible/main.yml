@@ -1,12 +1,12 @@
 ---
 - hosts: localhost
-  connection: 192.168.0.108
-  remote_user: dodo
+  connection: 107.23.14.177
+  remote_user: ubuntu
   tasks:
     - name: Create a java container
       community.docker.docker_container:
         name: java
-        image: jjino/java:apps
+        image: saidamo/java:apps
         state: started
         restart: yes
         ports:
