@@ -1,6 +1,6 @@
 ---
 - hosts: localhost
-  connection: 107.23.14.177
+  connection: localhost
   remote_user: ubuntu
   tasks:
     - name: Create a java container
