@@ -14,16 +14,6 @@ pipeline {
               '''
             }
         }
-        stage('SONAR SCANNER') {
-            steps {
-              sh ''' 
-                /usr/local/sonar-scanner/bin/sonar-scanner   -Dsonar.projectKey=dodo-java \
-                  -Dsonar.sources=. \
-                  -Dsonar.host.url=http://107.23.14.177:9000 \
-                  -Dsonar.login=sqp_deb2d6cc66d26941a8c4a2e3a2c7c624f4bf1170
-              '''
-            }
-        }
         stage('DOCKER IMAGE BUILD') {
             steps {
               sh ''' 
