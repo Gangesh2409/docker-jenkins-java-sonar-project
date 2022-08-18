@@ -1,10 +1,10 @@
 pipeline {
     agent any
     environment {
-        SONARQUBE_URL="20.14.84.78:9000"
-        SONAR_TOKEN="sqp_86d0cdb23d7b6e15463630eb6600c25948b4385e"
-        DOCKER_USERNAME="jjino"
-        DOCKER_PASSWORD="xxxxxxx@29"
+        SONARQUBE_URL="107.23.14.177:9000"
+        SONAR_TOKEN="sqp_deb2d6cc66d26941a8c4a2e3a2c7c624f4bf1170"
+        DOCKER_USERNAME="saidamo"
+        DOCKER_PASSWORD="sairam2127!"
     }
     stages {
         stage('DOCKER LOGIN') {
