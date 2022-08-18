@@ -10,7 +10,7 @@ pipeline {
         stage('DOCKER LOGIN') {
             steps {
               sh ''' 
-                echo "${DOCKER_PASSWORD}" | docker login --username "${DOCKER_USERNAME}" --password-stdin
+                echo "docker login process"
               '''
             }
         }
@@ -43,7 +43,7 @@ pipeline {
         stage('DOCKER LOGOUT') {
             steps {
               sh ''' 
-                docker logout
+                echo "docker logout"
               '''
             }
         }
